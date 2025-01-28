@@ -1,0 +1,1 @@
+# Robert Nelson, Variable notes
