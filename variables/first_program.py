@@ -1,4 +1,4 @@
-# this if for an assignment
+# Robert Nelson, First Project Python
 
 print("Hello World")
 
