@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main (void){
-    char Utah[] = "Robert";
-    printf("What is the capital of Utah: \n");
-    scanf ("%s", Utah);
-    printf("Hello, %s!", Utah);
+    char name[] = "Robert";
+    printf("What is your name: \n");
+    scanf ("%s", name);
+    printf("Hello, %s!", name);
     
     
     return 0;
