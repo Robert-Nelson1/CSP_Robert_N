@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "firstProgram.C": "cpp"
+        "firstProgram.C": "cpp",
+        "math.h": "c"
     }
 }
