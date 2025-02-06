@@ -8,7 +8,8 @@ int four = (17-6/2)+4*3;
 int five = -2*(1*4-2/2)+(6+2-3);
 int six = -1*((3-4*7)/5)-2*24/6;
 int seven = (3*(int)pow(5, 2)/15)-(5-(int)pow(2, 2));
-// not done // int eight = (int)pow(1, 4)*
+int eight = (int)pow(1, 4)*(int)pow(2, 2)+(int)pow(3, 3)-(int)pow(2, 5)/4;
+int nine = (int)pow(22/2-2*5, 2)+(int)pow(4-6/6, 2);
 
 int main(void){
     printf("%d\n", one);
@@ -18,6 +19,7 @@ int main(void){
     printf("%d\n", five);
     printf("%d\n", six);
     printf("%d\n", seven);
+    printf("%d\n", eight);
+    printf("%d\n", nine);
     return 0;
 }
-// char name[20];
