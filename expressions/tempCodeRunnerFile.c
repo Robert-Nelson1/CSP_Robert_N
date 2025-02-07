@@ -1,32 +1,8 @@
-// Robert Nelson, Financial Calculator - C
-#include <stdio.h>
-float income;
-float rent;
-float utilities;
-float groceries;
-float transportation;
-float savings;
-float spending;
-float percentRent;
-float percentUtilities;
-float percentGroceries;
-float percentTransportation;
+"""// ask user their income (variable and input)
+income = float(input("What is your income?\n"))
+// ask user their rent (variable and input)
+rent = float(input("What is your rent?\n"))
 
-
-
-int main(void){
-
-    printf("Hello World");
-
-    // print statement that welcomes my user and tells what the program does
-printf("\nHi, this is a financial calculator, it will ask you questions to help you make good financial decisions");
-//ask user their income (variable and input)
-printf("\nwhat is your monthly income?");
-scanf("%f", &income);
-//ask user their rent (variable and input)
-printf("\nwhat is your rent?");
-scanf("%f", &rent);
-/*
 // ask user their utilities (variable and input)
 utilities = float(input("What is your utilities?\n"))
 
@@ -43,11 +19,7 @@ print("You should be saving 10% of your income which is $", savings)
 spending = income-savings-rent-utilities-groceries-transportation
 print("You should spend only $", spending, "otherwise you will go in debt")
 // calculate percent income of rent (rent/income*100) variable
-*/
-percentRent = rent/income*100;
-printf("%f\n", percentRent);
-//percent_of_rent = rent/income*100
-/*
+percent_of_rent = rent/income*100
 print("Your percent of rent is", percent_of_rent, "%")
 
 // calculate percent income of utilities (utilities/income*100) variable
@@ -77,8 +49,3 @@ print("Your savings is $", savings, "which is 10% of your income" )
 
 # Your spending is $XX.XX which is XX% of your income. (Print)
 print("Your spending is $", spending, "which is ", percent_of_spending, "%", "of your income" )"""
-
-*/
-    return 0;
-}
-
