@@ -23,19 +23,23 @@ printf("\nHi, this is a financial calculator, it will ask you questions to help 
 //ask user their income (variable and input)
 printf("\nwhat is your monthly income?");
 scanf("%f", &income);
+
 //ask user their rent (variable and input)
 printf("\nwhat is your rent?");
 scanf("%f", &rent);
-/*
+
 // ask user their utilities (variable and input)
-utilities = float(input("What is your utilities?\n"))
+printf("\nwhat is your utilities?");
+scanf("%f", &utilities);
 
 // ask user their groceries (variable and input)
-groceries = float(input("What is your groceries?\n"))
+printf("\nwhat is your groceries?");
+scanf("%f", &groceries);
 
 // ask user their transportation (variable and input)
-transportation = float(input("What is your transportation?\n"))
-
+printf("\nwhat is your transportation?");
+scanf("%f", &transportation);
+/*
 // calculate savings as 10% income (income*.1) (variable)
 savings = income*.1
 print("You should be saving 10% of your income which is $", savings)
@@ -44,13 +48,20 @@ spending = income-savings-rent-utilities-groceries-transportation
 print("You should spend only $", spending, "otherwise you will go in debt")
 // calculate percent income of rent (rent/income*100) variable
 */
-percentRent = rent/income*100;
-printf("%f\n", percentRent);
-//percent_of_rent = rent/income*100
-/*
-print("Your percent of rent is", percent_of_rent, "%")
 
-// calculate percent income of utilities (utilities/income*100) variable
+percentRent = rent/income*100;
+percentUtilities = utilities/income*100;
+percentGroceries = groceries/income*100;
+percentTransportation = transportation/income*100;
+
+//printf("Your rent is %f\n", percentRent);
+/*
+printf("of your income");
+//percent_of_rent = rent/income*100
+
+print("Your percent of rent is", percent_of_rent)
+*/
+/* calculate percent income of utilities (utilities/income*100) variable
 percent_of_utilities = utilities/income*100
 print("Your percent of utilities is", percent_of_utilities, "%")
 // calculate percent income of groceries (groceries/income*100) variable
@@ -64,6 +75,14 @@ print("Your percent of transportation is", percent_of_transportation, "%")
 percent_of_spending = spending/income*100
 print("Your percent of spending is", percent_of_spending, "%")
 // Your rent is $XX.XX which is XX% of your income. (Print)
+*/
+/*
+scanf("%f", &rent);
+printf("Your rent is %f\n", &rent);
+printf("Which is", percentRent);
+printf("of your income ");
+*/
+/*
 print("Your rent is $", rent, "which is ", percent_of_rent, "%", "of your income" )
 // Your utilities is $XX.XX which is XX% of your income. (Print)
 print("Your utilities is $", utilities, "which is ", percent_of_utilities, "%", "of your income" )
@@ -79,6 +98,13 @@ print("Your savings is $", savings, "which is 10% of your income" )
 print("Your spending is $", spending, "which is ", percent_of_spending, "%", "of your income" )"""
 
 */
+
+
+printf("Your rent is $%.2f, which is %.1f percent of your income", rent, percentRent);
+printf("\nYour utilities is $%.2f, which is %.1f percent of your income", utilities, percentUtilities);
+printf("\nYour groceries is $%.2f, which is %.1f percent of your income", groceries, percentGroceries);
+printf("\nYour transportation is $%.2f, which is %.1f percent of your income", transportation, percentTransportation);
+
     return 0;
 }
 
