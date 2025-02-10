@@ -39,9 +39,15 @@ scanf("%f", &groceries);
 // ask user their transportation (variable and input)
 printf("\nwhat is your transportation?");
 scanf("%f", &transportation);
+
+
+
+
+//savings = income*.1;
+//printf("\nYou should be saving", &income*.1);
 /*
 // calculate savings as 10% income (income*.1) (variable)
-savings = income*.1
+
 print("You should be saving 10% of your income which is $", savings)
 // calculate spending as income-savings-rent-utilities-groceries-transportation (variable)
 spending = income-savings-rent-utilities-groceries-transportation
@@ -53,6 +59,8 @@ percentRent = rent/income*100;
 percentUtilities = utilities/income*100;
 percentGroceries = groceries/income*100;
 percentTransportation = transportation/income*100;
+savings = (income*.1);
+spending = (income-savings-rent-utilities-groceries-transportation);
 
 //printf("Your rent is %f\n", percentRent);
 /*
@@ -100,11 +108,12 @@ print("Your spending is $", spending, "which is ", percent_of_spending, "%", "of
 */
 
 
-printf("Your rent is $%.2f, which is %.1f percent of your income", rent, percentRent);
+printf("\nYour rent is $%.2f, which is %.1f percent of your income", rent, percentRent);
 printf("\nYour utilities is $%.2f, which is %.1f percent of your income", utilities, percentUtilities);
 printf("\nYour groceries is $%.2f, which is %.1f percent of your income", groceries, percentGroceries);
 printf("\nYour transportation is $%.2f, which is %.1f percent of your income", transportation, percentTransportation);
-
+printf("\nYou should save 10% of your income, which is $%.2f", savings);
+printf("\nYou should only spend $%.2f, otherwise you will go in debt", spending);
     return 0;
 }
 
