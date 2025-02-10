@@ -112,7 +112,7 @@ printf("\nYour rent is $%.2f, which is %.1f percent of your income", rent, perce
 printf("\nYour utilities is $%.2f, which is %.1f percent of your income", utilities, percentUtilities);
 printf("\nYour groceries is $%.2f, which is %.1f percent of your income", groceries, percentGroceries);
 printf("\nYour transportation is $%.2f, which is %.1f percent of your income", transportation, percentTransportation);
-printf("\nYou should save 10% of your income, which is $%.2f", savings);
+printf("\nYou should save 10%% of your income, which is $%.2f", savings);
 printf("\nYou should only spend $%.2f, otherwise you will go in debt", spending);
     return 0;
 }
