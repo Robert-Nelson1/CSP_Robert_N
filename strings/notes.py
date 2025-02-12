@@ -7,12 +7,17 @@ note ="Vienna's class"
 #print(f"Hello {name}, welcome to my program!")
 
 
-sentence = "The quick brown fox jumps over the lazy dog"
+"""sentence = "The quick brown fox jumps over the lazy dog"
 print(len(sentence))
 print(sentence[4])
 print(sentence.find("brown"))
 
 start = sentence.find("brown")
 length = len("brown fox")
-
-print(sentence[10:19])
+"""
+hi = "hello"
+hii = " world"
+print(hi + hii)
+hiii = hi + hii
+print(hiii)
+#print(sentence[10:19])
