@@ -23,7 +23,7 @@ void money(float var, char categorytype[20]){
 void financial(float cost, float income, char type[20]){
     
     float percent = cost/income*100;
-    printf("What is your %s", income);
+    printf("What is your %f", income);
     
     printf("Your %s is $%f, which is %f%% of your income.", type, cost, income);
     
