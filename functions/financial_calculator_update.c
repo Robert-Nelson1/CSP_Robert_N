@@ -20,11 +20,11 @@ void money(float *var, const char *categorytype){
     scanf("%f", var);
 }
 
-void financial(float cost, float income, const char *type[20]){
+void financial(float cost, float income, const char *type){
     
     float percent = cost/income*100;
     
-    printf("\nYour %s is $%.2f, which is %.2f%% of your income.", type, cost, income);
+    printf("\nYour %s is $%.2f, which is %.2f%% of your income.", type, cost, percent);
     
 }
 
