@@ -3,6 +3,8 @@
         "stdio.h": "c",
         "firstProgram.C": "cpp",
         "math.h": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "compare": "c",
+        "type_traits": "c"
     }
 }
