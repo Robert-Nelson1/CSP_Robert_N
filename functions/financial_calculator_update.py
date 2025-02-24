@@ -4,9 +4,9 @@ def info(cost, income, category):
     percent = cost/income*100
     print(f"Your {category} is ${cost:.2f} which is {percent:.2f}% of your income.")
 
-def get_expense(name):
+def get_expense(money_values):
     #Gets input from the user.
-    return float(input(f"What is your {name}?\n"))
+    return float(input(f"What is your {money_values}?\n"))
 
 # print statement that welcomes my user and tells what the program does
 print("Hi, this is a financial calculator. It will ask you some questions to help you make good financial decisions")
