@@ -61,6 +61,7 @@ if not num <10: #not changes to check if false
     #Allows the code to handle more difficult questions and increases complexity
 
 # 9. What does a nested conditional statement do? # put an if statement in a if statement
+# You can create as many nest conditionals as you want, but you shouldn't go past three.
 if num <10:
     if num ==8:
         print("This prints at 8")
@@ -68,7 +69,3 @@ if num <10:
         print("The number is the less than 10")
 #else:
  #   print("The humber is biger than 10")
-#How do you write an if statement in C?
-#How do you write else statements in C?
-#How do you write elif/ else if statements in C?
-#How do you write the 3 logical operators in C?
