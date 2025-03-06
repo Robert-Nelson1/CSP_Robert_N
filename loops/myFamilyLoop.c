@@ -3,7 +3,7 @@
 
 int main(void){
 
-    char siblings[][20] = {"Robert", "Renee"};
+    char siblings[][20] = {"Robert", "Renee", "John"};
     int mlength = sizeof(siblings)/sizeof(siblings[0]);
 
     int m;
