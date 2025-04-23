@@ -5,24 +5,44 @@
         <title>Hidden Images</title>
         <script src="hidden.js"></script>
         <style>
-            img{
-                height: 500px;
-                width: auto;
-            }
-            #meme{
-                height: 200px;
-                width: auto;
-                display: none;
-            }
             
+            body{
+                background-color: lightblue;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                text-align: center;
+            }
+            img{
+                height: 300px;
+                width: auto;
+            }
         </style>
     </head>
     <body>
         <h1>There is a hidden image somewhere in this webpage</h1>
-        <p onclick="show()">Don't click me</p>
-        <br>
-        <img id="img"  onmouse onmouseenter="hover()" onmouseleave="leave()" src="https://ac.blooket.com/marketassets/blooks/yeti.svg" alt="blooket">
-        <img id ="meme" src="https://www.ucas-edu.net/assets/images/ucas-logo.svg">
         
+        <div id="begin">
+            <h2>The Joy and Freedom of Biking</h2>
+            <p>By far, bikes allow you more than just getting around places. This amazing invention is known for granting you that exhilarated feeling of freedom and fun. The moment you first get on a bike, it gives you the power to examine your world at your own pace. Whether you plan on riding through city, going down country roads, or going over dirt trails, biking is exciting. On top of that, it helps you to keep your health in check, too. As an added bonus, you end up with stronger legs, improved balance and posture. With all the benefits, your cardiovascular health gets tuned, as well, granted all these improvements are easy on the environment.</p>
+            
+            <p>Let alone the physical benefits, biking comes with an immense positive effect on mental health. Its impact can be felt in stress reduction and focus improvement. Even when getting around city, the feeling of breeze on your face is guaranteed to give you a peace of mind. Being on a bike gives you a break from the routine whether you're riding to school, or just biking around the neighborhood. You can get your chance to think and just be in the moment.</p>
+        </div>
+    
+        <div id="lists">
+            <p>Top Benefits of Biking:</p>
+            <ol><!--Ol stands for ordered list-->
+                <li>Improves physical fitness and strengthens muscles</li>
+                <li>Boosts mental health and reduces stress</li>
+                <li>Saves money on gas and transportation</li>
+                <li>Easy to maintain and repair</li>
+            </ol>
+        </div>
+            
+            <img src="https://bikepacking.com/wp-content/uploads/2024/01/Blackheart-Bike-Co-Gravel-AL_3-2000x1333.jpg"alt="Bike"">
+            <p>Image from bike packing</p>
+    
+            <img id="img" onmouseover="hover()" src="https://static.vecteezy.com/system/resources/previews/027/768/901/non_2x/frame-and-border-isolated-black-outline-on-white-bakcground-template-vector.jpg" alt="blooket">
+
     </body>
 </html>
