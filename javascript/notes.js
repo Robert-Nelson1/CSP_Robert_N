@@ -12,6 +12,7 @@ function change(){
 }
 
 function hello(){
+    let name = window.prompt("What is your SSN?")
     document.getElementById("title").style.color = "orange"
     document.getElementById("title").innerHTML = "orange"
 }
@@ -24,6 +25,9 @@ function leave(){
     document.getElementById("img").src = "https://ac.blooket.com/marketassets/blooks/yeti.svg"
 }
 
-function hidden(){
+function show(){
     document.getElementById("meme").style.display = "block"
+}
+function pop(){
+    window.alert("ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
 }
