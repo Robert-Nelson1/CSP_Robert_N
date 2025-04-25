@@ -6,16 +6,29 @@
         <script src="hidden.js"></script>
         <style>
             
-            body{
+            body {
                 background-color: lightblue;
                 font-family: Arial, Helvetica, sans-serif;
+                height: 100vh;
+                margin: 0;
+                padding: 20px;
             }
             h1{
                 text-align: center;
             }
             img{
-                height: 300px;
+                height: 386px;
+                width: 579px;
+            }
+            #img {
+                display: none;
+            }
+
+            #hoverArea {
                 width: auto;
+                background-color: rgba(0, 0, 0, 0.1); /* Light background for visibility */
+                border: 2px solid #ccc;
+                text-align: center;
             }
         </style>
     </head>
@@ -42,7 +55,9 @@
             <img src="https://bikepacking.com/wp-content/uploads/2024/01/Blackheart-Bike-Co-Gravel-AL_3-2000x1333.jpg"alt="Bike"">
             <p>Image from bike packing</p>
     
-            <img id="img" onmouseover="hover()" src="https://static.vecteezy.com/system/resources/previews/027/768/901/non_2x/frame-and-border-isolated-black-outline-on-white-bakcground-template-vector.jpg" alt="blooket">
-
+            <img id="img" onmouseover="hover()" src="https://ac.blooket.com/marketassets/blooks/whiterabbit.svg" alt="Blooket">
+        <div id="hoverArea" onmouseover="hover()">
+            <p>???</p>
+        </div>
     </body>
 </html>
