@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>All About Rabbits</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: green;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+    }
+
+    .content-area {
+      background-color: lightgreen;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 800px;
+      display: grid;
+      gap: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: blue;
+    }
+
+    h2, p, ol, a {
+      color: black;
+      text-align: center;
+      margin: 10px;
+      padding: 5px;
+    }
+
+    #lists {
+      text-align: left;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    img {
+      width: 25%;
+    }
+
+    a {
+      color: darkblue;
+      display: block;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      background-color: #90ee90;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover, a:hover {
+      background-color: #c6f6d5;
+      cursor: pointer;
+    }
+
+    #meme {
+      display: none;
+      margin: 0 auto;
+      text-align: center;
+      width: 50%;
+    }
+
+    #meme-container {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-area">
+    <h1>Welcome to My Rabbit Page!</h1>
+
+    <div id="begin">
+      <h2>Why I Love Rabbits</h2>
+      <p>Perhaps bunnies are known for being some of the cutest and most interesting animals that can be domesticated...</p>
+      
+      <h2>Fun Facts About Rabbits</h2>
+      <p>Did you know that rabbits can turn their ears almost all the way around?... </p>
+    </div>
+
+    <button onclick="hello()">Want to know my personal experience with rabbits?</button>
+
+    <div id="meme-container">
+      <img id="meme" src="two_rabbits.png" alt="My Rabbits">
+    </div>
+
+    <div id="lists">
+      <p>Reasons why rabbits are good pets.</p>
+      <ol>
+        <li>Rabbits are quiet animals</li>
+        <li>Rabbits are easy to take care of as a pet</li>
+        <li>Rabbits are clean</li>
+        <li>Rabbits are nice</li>
+      </ol>
+    </div>
+
+    <div class="image-container">
+      <img id="img" onmouseenter="hover()" onmouseleave="leave()" src="https://ac.blooket.com/marketassets/blooks/whiterabbit.svg" alt="blooket">
+      <img src="https://ac.blooket.com/marketassets/blooks/rabbit.svg" alt="Blooket">
+    </div>
+
+    <p>Images from Blooket</p>
+    <a href="https://2pawsupinc.com/2020/04/17/10-reasons-why-rabbits-are-cool-pets/" target="_blank">Why rabbits are good pets</a>
+  </div>
+
+  <script>
+    function hover(){
+      document.getElementById("img").src = "https://ac.blooket.com/marketassets/blooks/springrabbit.svg";
+    }
+
+    function leave(){
+      document.getElementById("img").src = "https://ac.blooket.com/marketassets/blooks/whiterabbit.svg";
+    }
+
+    function hello(){
+      const image = document.getElementById("meme");
+      if (image.style.display === "none" || image.style.display === "") {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
