@@ -4,74 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zion National Park</title>
-  <style>
-    body {
-      background-color: #f0f8ff;
-      color: #333;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #004d40;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      padding: 2rem;
-    }
-
-    .content, .images, .extra {
-      background-color: #ffffff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      transition: transform 0.3s;
-    }
-
-    img:hover {
-      transform: scale(1.05);
-    }
-
-    button {
-      background-color: #00796b;
-      color: white;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 1rem;
-    }
-
-    .extra {
-      display: none;
-      grid-column: span 2;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
 <body>
+    
   <header>
     <h1>Zion National Park</h1>
   </header>
 
   <div class="container">
     <div class="content">
-      <p>Zion National Park is one of the most stunning outdoor destinations in the United States. Located in southern Utah, it's known for its towering sandstone cliffs, lush valleys, and breathtaking hikes like Angels Landing and The Narrows. It's a paradise for nature lovers, hikers, photographers, and anyone seeking an unforgettable adventure.</p>
+      <p>It's safe to say that Zion's National Park is one of the greatest outdoor locations in the United States. It's located in southern Utah with its magnificent sandstone cliffs and green valleys. Its breathtaking hikes, such as Angels Landing and The Narrows make the area nearly paradisiacal. It's a piece of heaven for nature lovers, hikers, photographers, and anyone who is looking for a life time adventure.</p>
       <ul>
         <li>Hike world-famous trails like Angels Landing and Observation Point</li>
         <li>See breathtaking red rock formations and scenic views</li>
@@ -85,33 +29,14 @@
       <img src="https://images.ctfassets.net/0wjmk6wgfops/2AwaXTSAjWNRzDRsxyBGbL/928a36135a838b927d34a2ad070d5b4e/AdobeStock_74780926.jpeg" alt="Angels Landing">
       <img src="https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/three-season-photography/mighty-5/zion/zion-national-park_the-narrows_istock.jpg" alt="The Narrows">
       <img src="https://images.squarespace-cdn.com/content/v1/5d09463a7ff6500001c3c9ba/1623703936933-BPGKN1KV6YMZB465336T/Zion-10.jpg" alt="Zion Landscape">
+      <p>Images from Adobe stock images, Visit Utah, and Squarespace.</p>
     </div>
 
     <div class="extra" id="extraContent">
-      <p>Zion is not only a place for adventurers but also a serene escape for those who love peaceful walks and wildlife viewing. Springdale, the nearby town, offers charming restaurants and shops for visitors to relax after a day of exploring. Whether you're an adrenaline junkie or someone who enjoys soaking in the scenery, Zion has something for everyone.</p>
+      <p>Having said that, Zion is not only a place for adventurers but also a getaway for those who admire peaceful walks and wildlife viewing. To offset that, Springdale, the nearby town, has to offer amazing restaurants and shops for visitors to relax after an excursion. Whether you enjoy an adrenaline rush or looking for a spot to soaking the scenery, Zion has got something for everyone.</p>
       <img id="img" onmouseenter="hover()" onmouseleave="leave()" src="https://www.nps.gov/zion/learn/nature/images/Big-Bend-11222021.jpg" alt="Zion Valley">
+      <p>Main image from National Park Service, second image from Visit Utah.</p>
     </div>
   </div>
-
-  <script>
-    function toggleExtra() {
-    const extra = document.getElementById('extraContent');
-    const style = window.getComputedStyle(extra);
-
-    if (style.display === 'none') {
-    extra.style.display = 'block';
-    } else {
-    extra.style.display = 'none';
-    }
-    }
-
-    function hover(){
-    document.getElementById("img").src = "https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/three-season-photography/southwestern-utah/southwestern-4/springdale_zion-national-park_dash-jay.jpg"
-    }
-
-    function leave(){
-    document.getElementById("img").src = "https://www.nps.gov/zion/learn/nature/images/Big-Bend-11222021.jpg"
-    }
-  </script>
 </body>
 </html>
