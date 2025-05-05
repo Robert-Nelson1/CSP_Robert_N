@@ -1,12 +1,15 @@
 function toggleExtra() {
     const extra = document.getElementById('extraContent');
+    const button = document.querySelector('button');
     const style = window.getComputedStyle(extra);
 
     if (style.display === 'none') {
-    extra.style.display = 'block';
-    } else {
-    extra.style.display = 'none';
-    }
+        extra.style.display = 'block';
+        button.textContent = "View Less";
+      } else {
+        extra.style.display = 'none';
+        button.textContent = "View More";
+      }
     }
 
     function hover(){
